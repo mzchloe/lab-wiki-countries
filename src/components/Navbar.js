@@ -1,11 +1,11 @@
+import { Link } from "react-router-dom";   
 
-export function Navbar(){
+export function Navbar() {
     return (
         <nav className="navbar navbar-dark bg-primary mb-3">
         <div className="container">
-        Wiki
-          {/* <a className="navbar-brand" href="/">WikiCountries</a> */}
+          <Link className="navbar-brand" to="/">WikiCountries</Link> 
           </div>
       </nav>
-    )
-}
+    );
+};
