@@ -3,7 +3,7 @@ import './App.css';
 import {Navbar} from './components';
 import {Routes, Route} from 'react-router-dom';
 import { CountriesList } from './components';
-import countriesData from './countries.json'; 
+
 
 
 function App() {
