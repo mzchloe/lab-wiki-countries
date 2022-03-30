@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {Navbar} from './components';
+import {CountryDetails, Navbar} from './components';
 import {Routes, Route} from 'react-router-dom';
 import { CountriesList } from './components';
 
@@ -16,6 +16,7 @@ function App() {
 <div className="container">
 <Routes>
   <Route path="/countrieslist" element={<CountriesList />} />
+  <Route path="/:id" element={<CountryDetails />} />
 </Routes>
 </div>
     </div>

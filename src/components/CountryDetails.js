@@ -4,17 +4,17 @@ import {useState, useEffect} from 'react';
 import countriesData from '../countries.json';
 
 export function CountryDetails(){
-    const [countryDetail, setCountryDetails] = useState([]);
+    const [countryDetail, setCountryDetails] = useState();
 
     useEffect(() => {
         setCountryDetails(countriesData)
       }, [])
     
     return (
-        <div class="col-7">
+        <div className="col-7">
         <img src="https://restcountries.eu/data/fra.svg" alt="country flag" style="width: 300px"/>
         <h1>France</h1>
-        <table class="table">
+        <table className="table">
           <thead></thead>
           <tbody>
             <tr>
